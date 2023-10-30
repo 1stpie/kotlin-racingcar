@@ -1,6 +1,11 @@
 package study.racingcar
 
-class Car(position: Int = 0) {
+class Car(val name: String, position: Int = 0) {
+
+    init {
+        require(name.length <= 5) { "Car name cannot exceed 5 characters" }
+    }
+
     var position = position
         private set
 
@@ -10,5 +15,5 @@ class Car(position: Int = 0) {
         }
     }
 
-    fun displayPosition(): String = "-".repeat(position)
+    fun displayPosition(): String = "$name : " + "-".repeat(position)
 }

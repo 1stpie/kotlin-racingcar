@@ -10,4 +10,9 @@ class ResultView(private val outputReceiver: OutputReceiver) {
         val result = cars.displayPositions().joinToString("\n") + "\n"
         outputReceiver.receive(result)
     }
+
+    fun displayWinners(winners: List<String>) {
+        val winnerNames = winners.joinToString(", ")
+        outputReceiver.receive("$winnerNames 가 최종 우승했습니다.")
+    }
 }

@@ -9,12 +9,17 @@ data class Cars(private val cars: List<Car>) {
     fun moveAll(randomValueGenerator: () -> Int): Cars {
         return Cars(
             cars.map { car ->
-                Car(car.position).apply { move(randomValueGenerator()) }
+                Car(car.name, car.position).apply { move(randomValueGenerator()) }
             }
         )
     }
 
     fun displayPositions(): List<String> {
         return cars.map { it.displayPosition() }
+    }
+
+    fun getWinners(): List<String> {
+        val maxPosition = cars.maxByOrNull { it.position }?.position ?: 0
+        return cars.filter { it.position == maxPosition }.map { it.name }
     }
 }
