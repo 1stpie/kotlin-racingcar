@@ -1,4 +1,4 @@
-package study.racingcar
+package study.racingcar.domain
 
 data class Cars(private val cars: List<Car>) {
 

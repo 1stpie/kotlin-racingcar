@@ -2,6 +2,8 @@ package study.racingcar
 
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
+import study.racingcar.domain.Car
+import study.racingcar.domain.Cars
 
 class CarsTest {
 

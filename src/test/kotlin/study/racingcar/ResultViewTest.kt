@@ -3,6 +3,10 @@ package study.racingcar
 import org.junit.jupiter.api.Test
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.verify
+import study.racingcar.domain.Car
+import study.racingcar.domain.Cars
+import study.racingcar.view.OutputReceiver
+import study.racingcar.view.ResultView
 
 class ResultViewTest {
 

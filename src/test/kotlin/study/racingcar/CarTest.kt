@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.CsvSource
+import study.racingcar.domain.Car
+import study.racingcar.domain.Cars
 
 class CarTest {
     @ParameterizedTest

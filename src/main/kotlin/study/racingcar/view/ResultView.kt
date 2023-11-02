@@ -1,4 +1,7 @@
-package study.racingcar
+package study.racingcar.view
+
+import study.racingcar.domain.Car
+import study.racingcar.domain.Cars
 
 class ResultView(private val outputReceiver: OutputReceiver) {
 

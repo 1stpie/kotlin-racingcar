@@ -4,6 +4,8 @@ import org.assertj.core.api.Java6Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.mockito.Mockito.doReturn
 import org.mockito.kotlin.mock
+import study.racingcar.view.InputProvider
+import study.racingcar.view.InputView
 
 class InputViewTest {
     private val inputProvider = mock<InputProvider>()
